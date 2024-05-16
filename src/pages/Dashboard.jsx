@@ -205,8 +205,11 @@ export function DashboardPage() {
               className="w-full rounded-full bg-background pl-8 md:w-[200px] lg:w-[336px]"
             />
           </div>
-          <div className="absolute mx-5 right-10 flex-1 flex justify-center items-center gap-7">
-            <SquarePen className="h-5 w-5 text-muted-foreground hover:text-foreground" />
+          <div className="absolute  right-10 flex-1 flex justify-center items-center gap-7">
+            <Link className="flex items-center gap-2 px-2.5 text-muted-foreground hover:text-foreground">
+              <SquarePen className="h-5 w-5 " />
+              Write
+            </Link>
             <Bell className="h-5 w-5 text-muted-foreground hover:text-foreground" />
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
@@ -244,25 +247,14 @@ export function DashboardPage() {
             </DropdownMenu>
           </div>
         </header>
-        <main className="grid flex-1 items-start gap-4 p-4 sm:px-6 sm:py-0 md:gap-8 lg:grid-cols-3 xl:grid-cols-3">
-          <div className="grid auto-rows-max items-start gap-4 md:gap-8 lg:col-span-2">
-            <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4">
-              <Card className="sm:col-span-2" x-chunk="dashboard-05-chunk-0">
-                <CardHeader className="pb-3">
-                  <CardTitle>Your Orders</CardTitle>
-                  <CardDescription className="max-w-lg text-balance leading-relaxed">
-                    Introducing Our Dynamic Orders Dashboard for Seamless
-                    Management and Insightful Analysis.
-                  </CardDescription>
-                </CardHeader>
-                <CardFooter>
-                  <Button>Create New Order</Button>
-                </CardFooter>
-              </Card>
-            </div>
+        <main className=" bg-red-500 h-screen w-screen grid flex-1 items-start gap-4 p-4 sm:px-6 sm:py-0 md:gap-8 lg:grid-cols-3 xl:grid-cols-3">
+          <div className="bg-red-900 h-full w-full grid auto-rows-max items-start gap-4 md:gap-8 lg:col-span-2">
+            <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4"></div>
           </div>
         </main>
       </div>
+      <hr className="-mt-4" />
+      <div className=" bg-red-400  h-screen w-1/2">hello</div>
     </div>
   );
 }
