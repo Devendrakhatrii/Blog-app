@@ -47,6 +47,7 @@ import {
   TooltipTrigger,
   TooltipProvider,
 } from "@/components/ui/tooltip";
+import Feed from "./Feed";
 
 export function DashboardPage() {
   return (
@@ -254,7 +255,7 @@ export function DashboardPage() {
         </main>
       </div>
       <hr className="-mt-4" />
-      <div className=" bg-red-400  h-screen w-1/2">hello</div>
+      <Feed />
     </div>
   );
 }
