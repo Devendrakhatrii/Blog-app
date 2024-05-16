@@ -148,7 +148,7 @@ export function DashboardPage() {
           </TooltipProvider>
         </nav>
       </aside>
-      <div className="flex flex-col sm:gap-4 sm:py-4 sm:pl-14">
+      <div className="flex flex-col sm:gap-4 sm:py-4 sm:pl-14 ">
         <header className="sticky top-0 z-30 flex h-14 items-center gap-4 border-b bg-background px-4 sm:static sm:h-auto sm:border-0 sm:bg-transparent sm:px-6">
           <Sheet>
             <SheetTrigger asChild>
@@ -205,9 +205,9 @@ export function DashboardPage() {
               className="w-full rounded-full bg-background pl-8 md:w-[200px] lg:w-[336px]"
             />
           </div>
-          <div className="absolute mx-10 right-10 flex-1 flex justify-center items-center gap-5">
-            <SquarePen className="h-5 w-5" />
-            <Bell className="h-5 w-5" />
+          <div className="absolute mx-5 right-10 flex-1 flex justify-center items-center gap-7">
+            <SquarePen className="h-5 w-5 text-muted-foreground hover:text-foreground" />
+            <Bell className="h-5 w-5 text-muted-foreground hover:text-foreground" />
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button
