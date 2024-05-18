@@ -4,7 +4,7 @@ import { HomePage } from "@/pages/Home";
 import { LoginPage } from "@/pages/Login";
 import { SignupPage } from "@/pages/Signup";
 import { NavigationPage } from "@/pages/Navigation";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/header/Navbar";
 import Layout from "./Layout";
 
 export const router = createBrowserRouter([
@@ -13,14 +13,7 @@ export const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { path: "", element: <>Home</> },
-      {
-        path: "/login",
-        element: <LoginPage />,
-      },
-      {
-        path: "/signup",
-        element: <SignupPage />,
-      },
+
       {
         path: "/dashboard",
         element: <DashboardPage />,
@@ -34,5 +27,13 @@ export const router = createBrowserRouter([
         element: <Navbar />,
       },
     ],
+  },
+  {
+    path: "/login",
+    element: <LoginPage />,
+  },
+  {
+    path: "/signup",
+    element: <SignupPage />,
   },
 ]);
