@@ -1,58 +1,9 @@
-import { Link } from "react-router-dom";
-import {
-  ChevronLeft,
-  ChevronRight,
-  Copy,
-  CreditCard,
-  File,
-  Home,
-  LineChart,
-  Package,
-  Package2,
-  PanelLeft,
-  Search,
-  Settings,
-  ShoppingCart,
-  Users2,
-  User,
-  Bookmark,
-  CircleFadingPlus,
-  SquarePen,
-  Bell,
-  NotepadText,
-} from "lucide-react";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import {
-  DropdownMenu,
-  DropdownMenuCheckboxItem,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { Input } from "@/components/ui/input";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-  TooltipProvider,
-} from "@/components/ui/tooltip";
-import Feed from "./Feed";
+import Feed from "../feed/Feed";
 
-export function DashboardPage() {
+export default function HomePage() {
   return (
     <div className="flex min-h-screen w-full flex-col bg-muted/40 ">
-      <aside className="fixed inset-y-0 left-0 z-10 hidden w-14 flex-col border-r bg-background sm:flex">
+      {/* <aside className="fixed inset-y-0 left-0 z-10 hidden w-14 flex-col border-r bg-background sm:flex">
         <nav className="flex flex-col items-center gap-4 px-2 sm:py-5">
           <Link
             href="#"
@@ -148,8 +99,8 @@ export function DashboardPage() {
             </Tooltip>
           </TooltipProvider>
         </nav>
-      </aside>
-      <div className="flex flex-col sm:gap-4 sm:py-4 sm:pl-14 ">
+      </aside> */}
+      {/* <div className="flex flex-col sm:gap-4 sm:py-4 sm:pl-14 ">
         <header className="sticky top-0 z-30 flex h-14 items-center gap-4 border-b bg-background px-4 sm:static sm:h-auto sm:border-0 sm:bg-transparent sm:px-6">
           <Sheet>
             <SheetTrigger asChild>
@@ -253,8 +204,8 @@ export function DashboardPage() {
             <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4"></div>
           </div>
         </main>
-      </div>
-      <hr className="-mt-4" />
+      </div> */}
+      {/* <hr className="-mt-4" /> */}
       <Feed />
     </div>
   );

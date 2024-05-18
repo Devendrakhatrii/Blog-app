@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { BadgePlus } from "lucide-react";
 
-const Feed = () => {
+const FeedPage = () => {
   return (
     <>
       <div className="    h-screen w-1/2 ml-60 mt-3 ">
@@ -13,40 +13,48 @@ const Feed = () => {
             <BadgePlus className="ml-2 -mr-3  h-4 w-4" />
             <span className="sr-only">Acme Inc</span>
           </Link>
-          <Link
-            href="#"
-            className="text-foreground transition-colors hover:text-foreground"
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `text-muted-foreground transition-colors hover:text-foreground ${
+                isActive ? "text-foreground" : null
+              }`
+            }
           >
             For You
-          </Link>
-          <Link
-            href="#"
-            className="text-muted-foreground transition-colors hover:text-foreground"
+          </NavLink>
+          <NavLink
+            to="/following"
+            className={({ isActive }) =>
+              ` text-muted-foreground transition-colors hover:text-foreground ${
+                isActive ? "text-foreground" : null
+              } `
+            }
           >
             Following
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             href="#"
             className="text-muted-foreground transition-colors hover:text-foreground"
           >
             AI
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             href="#"
             className="text-muted-foreground transition-colors hover:text-foreground"
           >
             Programming
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             href="#"
             className="text-muted-foreground transition-colors hover:text-foreground"
           >
             MERN Stack
-          </Link>
+          </NavLink>
         </nav>
       </div>
     </>
   );
 };
 
-export default Feed;
+export default FeedPage;
