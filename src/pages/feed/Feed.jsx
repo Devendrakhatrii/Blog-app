@@ -14,10 +14,10 @@ const FeedPage = () => {
             <span className="sr-only">Acme Inc</span>
           </Link>
           <NavLink
-            to="/"
+            to="/foryou"
             className={({ isActive }) =>
-              `text-muted-foreground transition-colors hover:text-foreground ${
-                isActive ? "text-foreground" : null
+              ` transition-colors hover:text-foreground ${
+                isActive ? "text-foreground" : "text-muted-foreground"
               }`
             }
           >
@@ -26,28 +26,40 @@ const FeedPage = () => {
           <NavLink
             to="/following"
             className={({ isActive }) =>
-              ` text-muted-foreground transition-colors hover:text-foreground ${
-                isActive ? "text-foreground" : null
+              `  transition-colors hover:text-foreground ${
+                isActive ? "text-foreground" : "text-muted-foreground"
               } `
             }
           >
             Following
           </NavLink>
           <NavLink
-            href="#"
-            className="text-muted-foreground transition-colors hover:text-foreground"
+            to="/ai"
+            className={({ isActive }) =>
+              `  transition-colors hover:text-foreground ${
+                isActive ? "text-foreground" : "text-muted-foreground"
+              } `
+            }
           >
             AI
           </NavLink>
           <NavLink
-            href="#"
-            className="text-muted-foreground transition-colors hover:text-foreground"
+            to="/programming"
+            className={({ isActive }) =>
+              ` ${
+                isActive ? "text-foreground" : "text-muted-foreground"
+              }  hover:text-foreground`
+            }
           >
             Programming
           </NavLink>
           <NavLink
-            href="#"
-            className="text-muted-foreground transition-colors hover:text-foreground"
+            to="/mernstack"
+            className={({ isActive }) =>
+              `  transition-colors hover:text-foreground ${
+                isActive ? "text-foreground" : "text-muted-foreground"
+              } `
+            }
           >
             MERN Stack
           </NavLink>
