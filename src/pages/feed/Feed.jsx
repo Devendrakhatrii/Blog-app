@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import { BadgePlus } from "lucide-react";
-import Post from "@/components/header/Post";
+import Post from "@/components/post/Post";
 
 const FeedPage = () => {
   return (
