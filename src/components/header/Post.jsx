@@ -22,7 +22,7 @@ const Post = () => {
           <Card key={index} className="w-full mb-4">
             <CardHeader>
               <CardTitle className="flex  items-center gap-2">
-                <Avatar>
+                <Avatar className="z-0">
                   <AvatarImage src="https://github.com/shadcn.png" />
                   <AvatarFallback>CN</AvatarFallback>
                 </Avatar>

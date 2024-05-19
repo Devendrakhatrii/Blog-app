@@ -5,7 +5,7 @@ import Post from "@/components/header/Post";
 const FeedPage = () => {
   return (
     <>
-      <div className="h-screen w-1/2 ml-60 mt-3 ">
+      <div className="h-screen w-1/2 ml-60 mt-3">
         <nav className=" bg-white z-999 sticky top-0 flex items-center h-10 mb-3 py-6 p-4 border-b-2   flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
           <Link
             href="#"
@@ -15,9 +15,9 @@ const FeedPage = () => {
             <span className="sr-only">Acme Inc</span>
           </Link>
           <NavLink
-            to="/foryou"
+            to="/"
             className={({ isActive }) =>
-              ` transition-colors hover:text-foreground ${
+              ` transition-colors hover:text-foreground text-foreground ${
                 isActive ? "text-foreground" : "text-muted-foreground"
               }`
             }
