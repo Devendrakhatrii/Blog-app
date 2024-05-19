@@ -5,8 +5,8 @@ import Post from "@/components/header/Post";
 const FeedPage = () => {
   return (
     <>
-      <div className="h-screen w-1/2 ml-60 mt-3 p-4 ">
-        <nav className="z-999 sticky top-0 flex items-center h-10 m-4 py-6 p-4 border-b-2   flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
+      <div className="h-screen w-1/2 ml-60 mt-3 ">
+        <nav className=" bg-white z-999 sticky top-0 flex items-center h-10 mb-3 py-6 p-4 border-b-2   flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
           <Link
             href="#"
             className="flex items-center gap-2 text-lg font-semibold md:text-base text-muted-foreground transition-colors hover:text-foreground"
@@ -65,7 +65,9 @@ const FeedPage = () => {
             MERN Stack
           </NavLink>
         </nav>
-        <Post />
+        <div className="w-full h-screen p-3">
+          <Post />
+        </div>
       </div>
     </>
   );
