@@ -7,7 +7,10 @@ const Layout = () => {
   return (
     <>
       <Navbar />
-      <FeedPage />
+      <div className=" flex min-h-fit">
+        <FeedPage />
+        <div className=" h-screen w-2/5 border-x-2"></div>
+      </div>
       <Outlet />
     </>
   );
